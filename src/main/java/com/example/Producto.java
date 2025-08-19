@@ -10,6 +10,8 @@ public class Producto {
     protected boolean activo;
 
 
+
+    
     public Producto(String nombre, double precioBase, String codigo, int cantidadStock, String categoria,
             boolean activo) {
         this.nombre = nombre;
@@ -81,12 +83,13 @@ public class Producto {
     }
 
      public double calcularPrecioFinal() {
+    return precioBase * 1.19;
+}
 
-        if () {
-            
-        }
-       // TODO: Calcular precio base + IVA (19%)
-       // Retornar el precio base multiplicado por 1.19
+ public boolean hayStock(int cantidad) {
+       // TODO: Verificar si hay suficiente stock disponible
+       // Comprobar que cantidadStock >= cantidad Y que el producto esté activo
+       // Retornar true si ambas condiciones se cumplen, false en caso contrario
    }
 
 }
